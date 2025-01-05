@@ -115,6 +115,9 @@
     .then(response => response.text())
     .then(html => {
       document.getElementById('projects-section').innerHTML = html;
+
+    // Initialize Isotope AFTER content is loaded
+    initializeIsotope();
     })
     .catch(error => console.error('Error loading the Projects section:', error));
   </script>
@@ -149,33 +152,27 @@
       backSpeed: 65
     });
   </script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"></script>
-  <script>
-    $(document).ready(function () {
-      // Initialize Isotope
-      const portfolioContainer = $('.portfolio-container').isotope({
-        itemSelector: '.portfolio-item',
-        layoutMode: 'fitRows'
-      });
-
-      // Filter items on button click
-      $('#portfolio-flters li').on('click', function () {
-        $('#portfolio-flters li').removeClass('filter-active');
-        $(this).addClass('filter-active');
-
-        const filterValue = $(this).attr('data-filter');
-        portfolioContainer.isotope({ filter: filterValue });
-      });
-    });
-
-    // Initialize Isotope AFTER content is loaded
-    initializeIsotope();
-  </script>
-
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script> 
+  function initializeIsotope() {
+    const $portfolioContainer = $('.portfolio-container').isotope({
+      itemSelector: '.portfolio-item',
+      layoutMode: 'fitRows',
+    });
+
+    // Reattach filter click event
+    $('#portfolio-flters li').off('click').on('click', function () {
+      const filterValue = $(this).attr('data-filter');
+      $portfolioContainer.isotope({ filter: filterValue });
+
+      $('#portfolio-flters li').removeClass('filter-active');
+      $(this).addClass('filter-active');
+    });
+  }
+
+  </script>
 
 </body>
 
