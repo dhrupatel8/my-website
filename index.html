@@ -48,28 +48,35 @@
 
 <body>
 
-  <div id="header-container"></div>
-  <script>
-    // Load header.html dynamically
-    fetch('header.html')
-    .then(response => response.text())
-    .then(html => {
-      const headerContainer = document.getElementById('header-container');
-      if (headerContainer) {
-        headerContainer.innerHTML = html;
-          // Initialize typed.js after content is added
-        new Typed('.typing', {
-          strings: ["AI Engineer", "Data Scientist", "Analyst"],
-          loop: true,
-          typeSpeed: 65,
-          backSpeed: 65
-        });
-      } else {
-        console.error('Element with id "header-container" not found.');
-      }
-    })
-    .catch(error => console.error('Error loading Header:', error));
-  </script>
+<!-- ======= Header ======= -->
+  <header id="header" class="header-tops">
+
+    <div class="container">
+
+      <h1><a href="index.html">Dhruv Patel</a></h1>
+      <h2 style="color:#fff">I'm <span class="typing" style="color:#12D640"></span></h2>
+      <nav class="nav-menu d-none d-lg-block">
+        <ul>
+          <li class="active"><a href="#header"> <span>Home</span></a></li>
+          <li><a href="#about"><span>About</span></a></li>
+          <li><a href="#experience"> <span>Experience</span></a></li>
+          <li><a href="#education"> <span>Education</span></a></li>
+          <li><a href="#portfolio"> <span>Projects</span></a></li>
+          <li><a href="#contacts"> <span>Contact</span></a></li>
+
+        </ul>
+      </nav><!-- .nav-menu -->
+
+      <div class="social-links">
+        <a href="https://www.linkedin.com/in/dhruv-patel-04201995/" target="_blank" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+        <a href="https://github.com/dhrupatel8" target="_blank" class="github"><i class="bx bxl-github"></i></a>
+        <a href="mailto:dhru.patel8@gmail.com" target="_blank" class="google"><i class="bx bxl-google"></i></a>
+
+      </div>
+
+    </div>
+  </header>
+<!-- End Header -->
 
   <div id="about-section"></div>
   <script>
@@ -90,7 +97,6 @@
     })
     .catch(error => console.error('Error loading the WorkExperience section:', error));
   </script>
-
 
 
   <div id="education-section"></div>
@@ -135,6 +141,37 @@
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="assets/vendor/venobox/venobox.min.js"></script>
   <script src="assets/vendor/typed.js/typed.min.js"></script>
+  <script type="text/javascript">
+    var typed = new Typed('.typing',{
+      strings: ["AI Engineer", "Data Scientist", "Analyst"],
+      loop: true,
+      typeSpeed: 65,
+      backSpeed: 65
+    });
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      // Initialize Isotope
+      const portfolioContainer = $('.portfolio-container').isotope({
+        itemSelector: '.portfolio-item',
+        layoutMode: 'fitRows'
+      });
+
+      // Filter items on button click
+      $('#portfolio-flters li').on('click', function () {
+        $('#portfolio-flters li').removeClass('filter-active');
+        $(this).addClass('filter-active');
+
+        const filterValue = $(this).attr('data-filter');
+        portfolioContainer.isotope({ filter: filterValue });
+      });
+    });
+
+    // Initialize Isotope AFTER content is loaded
+    initializeIsotope();
+  </script>
 
 
   <!-- Template Main JS File -->
