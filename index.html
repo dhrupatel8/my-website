@@ -105,15 +105,89 @@
   </script>
 
 
-  <div id="education-section"></div>
-  <script>
-    fetch('education.html')
-    .then(response => response.text())
-    .then(html => {
-      document.getElementById('education-section').innerHTML = html;
-    })
-    .catch(error => console.error('Error loading the Education section:', error));
-  </script>
+  <!-- ======= Education Section ======= -->
+<section id="education" class="services">
+  <div class="container">
+    <div class="section-title">
+      <h2>Education</h2>
+    </div>
+    <div class="row">
+      <div class="col-lg-12" data-aos="fade-up" style="display: inline-block;">
+
+
+        <div class="col-md-4 mt-4 mt-md-0 icon-box" data-aos="fade-up" data-aos-delay="100" style="padding:0px 0px;padding-bottom: 5px;display: inline-block;">
+          <a href="assets/img/education/gatech_verification_dhruv_patel.pdf">
+            <img src="assets/img/education/GeorgiaTech.png"  class="img-fluid" alt="">
+            <!-- <h4 style="text-align:left;"><a href="https://www.asu.edu/" target="_blank" style="color:#12d640">Arizona State University</a><br> </h4> -->
+            <p style="text-align:left;color:#fff;padding: 5px 10px;"><em>MS - Computer Science (Machine Learning)</em></p>
+            <h5 style="text-align:left;padding: 0px 10px;">December 2021</h5>
+            </a>
+          </div>
+
+          <div class="col-md-4 mt-4 mt-md-0 icon-box" data-aos="fade-up" data-aos-delay="100" style="padding:0px 0px;padding-bottom: 5px;display: inline-block;">
+            <a href="assets/img/education/ucla_verification_dhruv_patel.pdf">
+              <img src="assets/img/education/UCLA.png" class="img-fluid" alt="">
+              <!-- <h4 style="text-align:left;"><a href="https://ahduni.edu.in/" target="_blank" style="color:#12d640">Ahmedabad University</a><br> </h4> -->
+              <p style="text-align:left;color:#fff;padding: 5px 10px;"><em>B.Sc. in Statistics</em></p>
+              <h5 style="text-align:left;padding: 0px 10px;">June 2018</h5>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="portfolio">
+      <div class="container">
+        <div class="section-title">
+          <h2>Online Certification</h2>
+        </div>
+
+        <div class="row portfolio-container" style="display: flex; flex-wrap: wrap; gap: 20px;">
+          <!-- Certification Item -->
+          <div class="col-lg-4 col-md-6 portfolio-item">
+            <div class="portfolio-wrap">
+              <img src="assets/img/certification/coursera_data_engineering_certification.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Data Engineering Professional Certificate</h4>
+                <div class="portfolio-links">
+                  <a href="https://coursera.org/verify/professional-cert/MF2OJCEYIFFE" target="_blank" title="Certificate"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Certification Item -->
+          <div class="col-lg-4 col-md-6 portfolio-item">
+            <div class="portfolio-wrap">
+              <img src="assets/img/certification/coursera_marketing_analytics_foundation.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Marketing Analytics Foundation</h4>
+                <div class="portfolio-links">
+                  <a href="https://www.coursera.org/account/accomplishments/verify/9SE5UPU1WGU4" target="_blank" title="Certificate"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Certification Item -->
+          <div class="col-lg-4 col-md-6 portfolio-item">
+            <div class="portfolio-wrap">
+              <img src="assets/img/certification/coursera_data_analytics_for_marketing.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Data Analytics - Marketing</h4>
+                <div class="portfolio-links">
+                  <a href="https://coursera.org/share/92be35c0449eae9263eb05aff1e56ad3" target="_blank" title="Certificate"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        </div>
+      </div>
+    </div>
+</section>
+  <!-- End Education Section -->
 
   <!-- Start Project Section -->
 <section id="portfolio" class="portfolio">
@@ -208,6 +282,19 @@
               
               <div class="portfolio-links">
                 <a href="projects/car_price_prediction.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Project Details"><i class="bx bx-info-circle"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-da">
+          <center><h4>Retail Sales Prediction</h4></center>
+          <div class="portfolio-wrap">
+            <img src="assets/img/project/retail_sales_ts.png" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              
+              <div class="portfolio-links">
+                <a href="projects/retail_sales_ts.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Project Details"><i class="bx bx-info-circle"></i></a>
               </div>
             </div>
           </div>
