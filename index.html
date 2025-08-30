@@ -1,409 +1,589 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-WRM1XZ8ZCW"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-<head>
+      gtag("config", "G-WRM1XZ8ZCW");
+    </script>
+    <!-- End Google Tag Manager -->
 
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-WRM1XZ8ZCW"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 
-    gtag('config', 'G-WRM1XZ8ZCW');
-  </script>
-  <!-- End Google Tag Manager -->
+    <title>Personal Portfolio</title>
+    <meta content="" name="descriptison" />
+    <meta content="" name="keywords" />
 
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i"
+      rel="stylesheet"
+    />
 
-  <link rel="icon" type="image/png" href="/favicon.png"/>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <!-- Vendor CSS Files -->
+    <link
+      href="assets/vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet" />
+    <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet" />
+    <link
+      href="assets/vendor/owl.carousel/assets/owl.carousel.min.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
+    <link href="assets/vendor/venobox/venobox.css" rel="stylesheet" />
 
-  <title>Personal Portfolio</title>
-  <meta content="" name="descriptison">
-  <meta content="" name="keywords">
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet" />
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
-
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
-  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
-  <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
-  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
-
-  <!-- Template Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
-
-  <style>
-    .portfolio-wrap img {
-      height: 200px; /* Set a consistent height */
-      object-fit: cover; /* Ensures the image scales proportionally without distortion */
-      width: 100%; /* Ensures the image spans the full width of its container */
-    }
-  </style>
-  <!-- =======================================================
+    <style>
+      .portfolio-wrap img {
+        height: 200px; /* Set a consistent height */
+        object-fit: cover; /* Ensures the image scales proportionally without distortion */
+        width: 100%; /* Ensures the image spans the full width of its container */
+      }
+    </style>
+    <!-- =======================================================
   * Template Name: Personal - v2.1.0
   * Template URL: https://bootstrapmade.com/personal-free-resume-bootstrap-template/
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
-</head>
+  </head>
 
-<body>
-
-<!-- ======= Header ======= -->
-  <header id="header" class="header-tops">
-
-    <div class="container">
-
-      <h1><a href="index.html">Dhruv Patel</a></h1>
-      <h2 style="color:#fff">I'm <span class="typing" style="color:#12D640"></span></h2>
-      <nav class="nav-menu d-none d-lg-block">
-        <ul>
-          <li class="active"><a href="#header"> <span>Home</span></a></li>
-          <li><a href="#about"><span>About</span></a></li>
-          <li><a href="#experience"> <span>Experience</span></a></li>
-          <li><a href="#education"> <span>Education</span></a></li>
-          <li><a href="#portfolio"> <span>Projects</span></a></li>
-          <li><a href="#contacts"> <span>Contact</span></a></li>
-
-        </ul>
-      </nav><!-- .nav-menu -->
-
-      <div class="social-links">
-        <a href="https://www.linkedin.com/in/dhruv-patel-04201995/" target="_blank" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-        <a href="https://github.com/dhrupatel8" target="_blank" class="github"><i class="bx bxl-github"></i></a>
-        <a href="mailto:dhru.patel8@gmail.com" target="_blank" class="google"><i class="bx bxl-google"></i></a>
-
-      </div>
-
-    </div>
-  </header>
-<!-- End Header -->
-
-  <div id="about-section"></div>
-  <script>
-    fetch('about.html')
-    .then(response => response.text())
-    .then(html => {
-      document.getElementById('about-section').innerHTML = html;
-    })
-    .catch(error => console.error('Error loading the About section:', error));
-  </script>
-
-  <div id="workexperience-section"></div>
-  <script>
-    fetch('workexperience.html')
-    .then(response => response.text())
-    .then(html => {
-      document.getElementById('workexperience-section').innerHTML = html;
-    })
-    .catch(error => console.error('Error loading the WorkExperience section:', error));
-  </script>
-
-
-  <!-- ======= Education Section ======= -->
-<section id="education" class="services">
-  <div class="container">
-    <div class="section-title">
-      <h2>Education</h2>
-    </div>
-    <div class="row">
-      <div class="col-lg-12" data-aos="fade-up" style="display: inline-block;">
-
-
-        <div class="col-md-4 mt-4 mt-md-0 icon-box" data-aos="fade-up" data-aos-delay="100" style="padding:0px 0px;padding-bottom: 5px;display: inline-block;">
-          <a href="assets/img/education/gatech_verification_dhruv_patel.pdf">
-            <img src="assets/img/education/GeorgiaTech.png"  class="img-fluid" alt="">
-            <!-- <h4 style="text-align:left;"><a href="https://www.asu.edu/" target="_blank" style="color:#12d640">Arizona State University</a><br> </h4> -->
-            <p style="text-align:left;color:#fff;padding: 5px 10px;"><em>MS - Computer Science (Machine Learning)</em></p>
-            <h5 style="text-align:left;padding: 0px 10px;">December 2021</h5>
-            </a>
-          </div>
-
-          <div class="col-md-4 mt-4 mt-md-0 icon-box" data-aos="fade-up" data-aos-delay="100" style="padding:0px 0px;padding-bottom: 5px;display: inline-block;">
-            <a href="assets/img/education/ucla_verification_dhruv_patel.pdf">
-              <img src="assets/img/education/UCLA.png" class="img-fluid" alt="">
-              <!-- <h4 style="text-align:left;"><a href="https://ahduni.edu.in/" target="_blank" style="color:#12d640">Ahmedabad University</a><br> </h4> -->
-              <p style="text-align:left;color:#fff;padding: 5px 10px;"><em>B.Sc. in Statistics</em></p>
-              <h5 style="text-align:left;padding: 0px 10px;">June 2018</h5>
-            </a>
-          </div>
+  <body>
+    <!-- ======= Header ======= -->
+    <header id="header" class="header-tops">
+      <div class="container">
+        <h1><a href="index.html">Dhruv Patel</a></h1>
+        <h2 style="color: #fff">
+          I'm <span class="typing" style="color: #12d640"></span>
+        </h2>
+        <nav class="nav-menu d-none d-lg-block">
+          <ul>
+            <li class="active">
+              <a href="#header"><span>Home</span></a>
+            </li>
+            <li>
+              <a href="#about"><span>About</span></a>
+            </li>
+            <li>
+              <a href="#experience"><span>Experience</span></a>
+            </li>
+            <li>
+              <a href="#education"><span>Education</span></a>
+            </li>
+            <li>
+              <a href="#portfolio"><span>Projects</span></a>
+            </li>
+            <li>
+              <a href="#contacts"><span>Contact</span></a>
+            </li>
+          </ul>
+        </nav>
+        <div class="social-links">
+          <a
+            href="https://www.linkedin.com/in/dhruv-patel-04201995/"
+            target="_blank"
+            class="linkedin"
+            ><i class="bx bxl-linkedin"></i
+          ></a>
+          <a href="https://github.com/dhrupatel8" target="_blank" class="github"
+            ><i class="bx bxl-github"></i
+          ></a>
+          <a href="mailto:dhru.patel8@gmail.com" target="_blank" class="google"
+            ><i class="bx bxl-google"></i
+          ></a>
         </div>
       </div>
-    </div>
+    </header>
+    <!-- End Header -->
 
-    <div class="portfolio">
+    <div id="about-section"></div>
+    <script>
+      fetch("about.html")
+        .then((response) => response.text())
+        .then((html) => {
+          document.getElementById("about-section").innerHTML = html;
+        })
+        .catch((error) =>
+          console.error("Error loading the About section:", error)
+        );
+    </script>
+
+    <div id="workexperience-section"></div>
+    <script>
+      fetch("workexperience.html")
+        .then((response) => response.text())
+        .then((html) => {
+          document.getElementById("workexperience-section").innerHTML = html;
+        })
+        .catch((error) =>
+          console.error("Error loading the WorkExperience section:", error)
+        );
+    </script>
+
+    <!-- ======= Education Section ======= -->
+    <section id="education" class="services">
       <div class="container">
         <div class="section-title">
-          <h2>Online Certifications</h2>
+          <h2>Education</h2>
         </div>
-
-        <div class="row portfolio-container" style="display: flex; flex-wrap: wrap; gap: 20px;">
-          <!-- Certification Item -->
-          <div class="col-lg-4 col-md-6 portfolio-item">
-            <div class="portfolio-wrap">
-              <img src="assets/img/certification/coursera_data_engineering_certification.png" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Data Engineering Professional Certificate</h4>
-                <div class="portfolio-links">
-                  <a href="https://coursera.org/verify/professional-cert/MF2OJCEYIFFE" target="_blank" title="Certificate"><i class="bx bx-link"></i></a>
-                </div>
-              </div>
+        <div class="row">
+          <div
+            class="col-lg-12"
+            data-aos="fade-up"
+            style="display: inline-block"
+          >
+            <div
+              class="col-md-4 mt-4 mt-md-0 icon-box"
+              data-aos="fade-up"
+              data-aos-delay="100"
+              style="
+                padding: 0px 0px;
+                padding-bottom: 5px;
+                display: inline-block;
+              "
+            >
+              <a
+                href="assets/img/education/gatech_verification_dhruv_patel.pdf"
+              >
+                <img
+                  src="assets/img/education/GeorgiaTech.png"
+                  class="img-fluid"
+                  alt=""
+                />
+                <p style="text-align: left; color: #fff; padding: 5px 10px">
+                  <em>MS - Computer Science (Machine Learning)</em>
+                </p>
+                <h5 style="text-align: left; padding: 0px 10px">
+                  December 2021
+                </h5>
+              </a>
             </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item">
-            <div class="portfolio-wrap">
-              <img src="assets/img/certification/coursera_gen_ai_with_llm.png" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Generative AI with LLM (AWS)</h4>
-                <div class="portfolio-links">
-                  <a href="https://coursera.org/share/309f97d869e3e5b2d812020739931bf2" target="_blank" title="Certificate"><i class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          
-          <div class="col-lg-4 col-md-6 portfolio-item">
-            <div class="portfolio-wrap">
-              <img src="assets/img/certification/coursera_genai_snowflake.png" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Generative AI with Snowflake</h4>
-                <div class="portfolio-links">
-                  <a href="https://www.coursera.org/account/accomplishments/certificate/41A9ZX8SAXT8" target="_blank" title="Certificate"><i class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item">
-            <div class="portfolio-wrap">
-              <img src="assets/img/certification/coursera_modern_dataengineering.png" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Modern Data Engineering - Snowflake</h4>
-                <div class="portfolio-links">
-                  <a href="https://coursera.org/share/d0a647c268750b90ef7f1ec9e66d6f0d" target="_blank" title="Certificate"><i class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item">
-            <div class="portfolio-wrap">
-              <img src="assets/img/certification/coursera_aws_cloud_technical_essentials.png" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>AWS - Cloud Technical Essentials</h4>
-                <div class="portfolio-links">
-                  <a href="https://coursera.org/share/cc3cd6a1cb3ccbba3562bacabf1c9719" target="_blank" title="Certificate"><i class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Certification Item -->
-          <div class="col-lg-4 col-md-6 portfolio-item">
-            <div class="portfolio-wrap">
-              <img src="assets/img/certification/coursera_marketing_analytics_foundation.png" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Marketing Analytics Foundation</h4>
-                <div class="portfolio-links">
-                  <a href="https://www.coursera.org/account/accomplishments/verify/9SE5UPU1WGU4" target="_blank" title="Certificate"><i class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Certification Item -->
-          <div class="col-lg-4 col-md-6 portfolio-item">
-            <div class="portfolio-wrap">
-              <img src="assets/img/certification/coursera_data_analytics_for_marketing.png" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Data Analytics - Marketing</h4>
-                <div class="portfolio-links">
-                  <a href="https://coursera.org/share/92be35c0449eae9263eb05aff1e56ad3" target="_blank" title="Certificate"><i class="bx bx-link"></i></a>
-                </div>
-              </div>
+            <div
+              class="col-md-4 mt-4 mt-md-0 icon-box"
+              data-aos="fade-up"
+              data-aos-delay="100"
+              style="
+                padding: 0px 0px;
+                padding-bottom: 5px;
+                display: inline-block;
+              "
+            >
+              <a href="assets/img/education/ucla_verification_dhruv_patel.pdf">
+                <img
+                  src="assets/img/education/UCLA.png"
+                  class="img-fluid"
+                  alt=""
+                />
+                <p style="text-align: left; color: #fff; padding: 5px 10px">
+                  <em>B.Sc. in Statistics</em>
+                </p>
+                <h5 style="text-align: left; padding: 0px 10px">June 2018</h5>
+              </a>
             </div>
           </div>
         </div>
-
+      </div>
+      <div class="portfolio">
+        <div class="container">
+          <div class="section-title">
+            <h2>Online Certifications</h2>
+          </div>
+          <div
+            class="row portfolio-container"
+            style="display: flex; flex-wrap: wrap; gap: 20px"
+          >
+            <div class="col-lg-4 col-md-6 portfolio-item">
+              <div class="portfolio-wrap">
+                <img
+                  src="assets/img/certification/coursera_data_engineering_certification.png"
+                  class="img-fluid"
+                  alt=""
+                />
+                <div class="portfolio-info">
+                  <h4>Data Engineering Professional Certificate</h4>
+                  <div class="portfolio-links">
+                    <a
+                      href="https://coursera.org/verify/professional-cert/MF2OJCEYIFFE"
+                      target="_blank"
+                      title="Certificate"
+                      ><i class="bx bx-link"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 portfolio-item">
+              <div class="portfolio-wrap">
+                <img
+                  src="assets/img/certification/coursera_gen_ai_with_llm.png"
+                  class="img-fluid"
+                  alt=""
+                />
+                <div class="portfolio-info">
+                  <h4>Generative AI with LLM (AWS)</h4>
+                  <div class="portfolio-links">
+                    <a
+                      href="https://coursera.org/share/309f97d869e3e5b2d812020739931bf2"
+                      target="_blank"
+                      title="Certificate"
+                      ><i class="bx bx-link"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 portfolio-item">
+              <div class="portfolio-wrap">
+                <img
+                  src="assets/img/certification/coursera_genai_snowflake.png"
+                  class="img-fluid"
+                  alt=""
+                />
+                <div class="portfolio-info">
+                  <h4>Generative AI with Snowflake</h4>
+                  <div class="portfolio-links">
+                    <a
+                      href="https://www.coursera.org/account/accomplishments/certificate/41A9ZX8SAXT8"
+                      target="_blank"
+                      title="Certificate"
+                      ><i class="bx bx-link"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 portfolio-item">
+              <div class="portfolio-wrap">
+                <img
+                  src="assets/img/certification/coursera_modern_dataengineering.png"
+                  class="img-fluid"
+                  alt=""
+                />
+                <div class="portfolio-info">
+                  <h4>Modern Data Engineering - Snowflake</h4>
+                  <div class="portfolio-links">
+                    <a
+                      href="https://coursera.org/share/d0a647c268750b90ef7f1ec9e66d6f0d"
+                      target="_blank"
+                      title="Certificate"
+                      ><i class="bx bx-link"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 portfolio-item">
+              <div class="portfolio-wrap">
+                <img
+                  src="assets/img/certification/coursera_aws_cloud_technical_essentials.png"
+                  class="img-fluid"
+                  alt=""
+                />
+                <div class="portfolio-info">
+                  <h4>AWS - Cloud Technical Essentials</h4>
+                  <div class="portfolio-links">
+                    <a
+                      href="https://coursera.org/share/cc3cd6a1cb3ccbba3562bacabf1c9719"
+                      target="_blank"
+                      title="Certificate"
+                      ><i class="bx bx-link"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 portfolio-item">
+              <div class="portfolio-wrap">
+                <img
+                  src="assets/img/certification/coursera_marketing_analytics_foundation.png"
+                  class="img-fluid"
+                  alt=""
+                />
+                <div class="portfolio-info">
+                  <h4>Marketing Analytics Foundation</h4>
+                  <div class="portfolio-links">
+                    <a
+                      href="https://www.coursera.org/account/accomplishments/verify/9SE5UPU1WGU4"
+                      target="_blank"
+                      title="Certificate"
+                      ><i class="bx bx-link"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 portfolio-item">
+              <div class="portfolio-wrap">
+                <img
+                  src="assets/img/certification/coursera_data_analytics_for_marketing.png"
+                  class="img-fluid"
+                  alt=""
+                />
+                <div class="portfolio-info">
+                  <h4>Data Analytics - Marketing</h4>
+                  <div class="portfolio-links">
+                    <a
+                      href="https://coursera.org/share/92be35c0449eae9263eb05aff1e56ad3"
+                      target="_blank"
+                      title="Certificate"
+                      ><i class="bx bx-link"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-</section>
-  <!-- End Education Section -->
+    </section>
+    <!-- End Education Section -->
 
-  <!-- Start Project Section -->
-<section id="portfolio" class="portfolio">
-  <div class="container">
-
-    <div class="section-title">
-      <h2>Projects</h2>
-    </div>
-
-       <div class="row">
-        <div class="col-lg-12 d-flex justify-content-center">
-          <ul id="portfolio-flters">
-            <li data-filter="*" class="filter-active">All</li>
-            <li data-filter=".filter-da">Data Analytics</li>
-            <li data-filter=".filter-de">Data Engineering</li>
-          </ul>
+    <!-- Start Project Section -->
+    <section id="portfolio" class="portfolio">
+      <div class="container">
+        <div class="section-title">
+          <h2>Projects</h2>
+        </div>
+        <div class="row">
+          <div class="col-lg-12 d-flex justify-content-center">
+            <ul id="portfolio-flters">
+              <li data-filter="*" class="filter-active">All</li>
+              <li data-filter=".filter-ai">AI</li>
+              <li data-filter=".filter-da">Data Analytics</li>
+              <li data-filter=".filter-de">Data Engineering</li>
+            </ul>
+          </div>
+        </div>
+        <div class="row portfolio-container">
+          <div class="col-lg-4 col-md-6 portfolio-item filter-de">
+            <center><h4>ELT Snowflake DBT Airflow</h4></center>
+            <div class="portfolio-wrap">
+              <img
+                src="assets/img/project/snowflake_dbt_airflow.png"
+                class="img-fluid"
+                alt=""
+              />
+              <div class="portfolio-info">
+                <div class="portfolio-links">
+                  <a
+                    href="projects/snowflake_dbt_airflow.html"
+                    data-gall="portfolioDetailsGallery"
+                    data-vbtype="iframe"
+                    class="venobox"
+                    title="Project Details"
+                    ><i class="bx bx-info-circle"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 portfolio-item filter-ai">
+            <center><h4>GenAI - Snowflake</h4></center>
+            <div class="portfolio-wrap">
+              <img
+                src="assets/img/project/genai_snowflake.png"
+                class="img-fluid"
+                alt=""
+              />
+              <div class="portfolio-info">
+                <div class="portfolio-links">
+                  <a
+                    href="projects/genai_snowflake.html"
+                    data-gall="portfolioDetailsGallery"
+                    data-vbtype="iframe"
+                    class="venobox"
+                    title="Project Details"
+                    ><i class="bx bx-info-circle"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 portfolio-item filter-da">
+            <center><h4>Sepsis Prediction</h4></center>
+            <div class="portfolio-wrap">
+              <img
+                src="assets/img/project/sepsisprediction.png"
+                class="img-fluid"
+                alt=""
+              />
+              <div class="portfolio-info">
+                <div class="portfolio-links">
+                  <a
+                    href="projects/sepsisprediction.html"
+                    data-gall="portfolioDetailsGallery"
+                    data-vbtype="iframe"
+                    class="venobox"
+                    title="Project Details"
+                    ><i class="bx bx-info-circle"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 portfolio-item filter-da">
+            <center><h4>Bayesian vs Frequentist</h4></center>
+            <div class="portfolio-wrap">
+              <img
+                src="assets/img/project/bayesian_vs_t_tests.png"
+                class="img-fluid"
+                alt=""
+              />
+              <div class="portfolio-info">
+                <div class="portfolio-links">
+                  <a
+                    href="projects/bayesian_vs_t_tests.html"
+                    data-gall="portfolioDetailsGallery"
+                    data-vbtype="iframe"
+                    class="venobox"
+                    title="Project Details"
+                    ><i class="bx bx-info-circle"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 portfolio-item filter-da">
+            <center><h4>Tableau</h4></center>
+            <div class="portfolio-wrap">
+              <img
+                src="assets/img/project/tableau.png"
+                class="img-fluid"
+                alt=""
+              />
+              <div class="portfolio-info">
+                <div class="portfolio-links">
+                  <a
+                    href="projects/tableau.html"
+                    data-gall="portfolioDetailsGallery"
+                    data-vbtype="iframe"
+                    class="venobox"
+                    title="Project Details"
+                    ><i class="bx bx-info-circle"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 portfolio-item filter-da">
+            <center><h4>Telecom Customer Churn</h4></center>
+            <div class="portfolio-wrap">
+              <img
+                src="assets/img/project/churn_prediction.png"
+                class="img-fluid"
+                alt=""
+              />
+              <div class="portfolio-info">
+                <div class="portfolio-links">
+                  <a
+                    href="projects/telecom_customer_churn.html"
+                    data-gall="portfolioDetailsGallery"
+                    data-vbtype="iframe"
+                    class="venobox"
+                    title="Project Details"
+                    ><i class="bx bx-info-circle"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 portfolio-item filter-da">
+            <center><h4>Car Price Prediction</h4></center>
+            <div class="portfolio-wrap">
+              <img
+                src="assets/img/project/car_price_prediction.png"
+                class="img-fluid"
+                alt=""
+              />
+              <div class="portfolio-info">
+                <div class="portfolio-links">
+                  <a
+                    href="projects/car_price_prediction.html"
+                    data-gall="portfolioDetailsGallery"
+                    data-vbtype="iframe"
+                    class="venobox"
+                    title="Project Details"
+                    ><i class="bx bx-info-circle"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 portfolio-item filter-da">
+            <center><h4>Retail Sales Prediction</h4></center>
+            <div class="portfolio-wrap">
+              <img
+                src="assets/img/project/retail_sales_ts.png"
+                class="img-fluid"
+                alt=""
+              />
+              <div class="portfolio-info">
+                <div class="portfolio-links">
+                  <a
+                    href="projects/retail_sales_ts.html"
+                    data-gall="portfolioDetailsGallery"
+                    data-vbtype="iframe"
+                    class="venobox"
+                    title="Project Details"
+                    ><i class="bx bx-info-circle"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
+    </section>
+    <!-- End Project Section -->
 
-      <div class="row portfolio-container">
+    <div id="contact-section"></div>
+    <script>
+      fetch("contact.html")
+        .then((response) => response.text())
+        .then((html) => {
+          document.getElementById("contact-section").innerHTML = html;
+        })
+        .catch((error) =>
+          console.error("Error loading the Contact section:", error)
+        );
+    </script>
 
-        <div class="col-lg-4 col-md-6 portfolio-item filter-de">
-          <center><h4>ELT Snowflake DBT Airflow</h4></center>
-          <div class="portfolio-wrap">
-            <img src="assets/img/project/snowflake_dbt_airflow.png" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              
-              <div class="portfolio-links">
-                <a href="projects/snowflake_dbt_airflow.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Project Details"><i class="bx bx-info-circle"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/jquery/jquery.min.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+    <script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
+    <script src="assets/vendor/counterup/counterup.min.js"></script>
+    <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/venobox/venobox.min.js"></script>
+    <script src="assets/vendor/typed.js/typed.min.js"></script>
+    <script type="text/javascript">
+      var typed = new Typed(".typing", {
+        strings: ["AI Engineer", "Data Engineer", "Data Scientist"],
+        loop: true,
+        typeSpeed: 65,
+        backSpeed: 65,
+      });
+    </script>
 
-        <div class="col-lg-4 col-md-6 portfolio-item filter-de">
-          <center><h4>GenAI - Snowflake</h4></center>
-          <div class="portfolio-wrap">
-            <img src="assets/img/project/genai_snowflake.png" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              
-              <div class="portfolio-links">
-                <a href="projects/genai_snowflake.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Project Details"><i class="bx bx-info-circle"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-da">
-          <center><h4>Sepsis Prediction</h4></center>
-          <div class="portfolio-wrap">
-            <img src="assets/img/project/sepsisprediction.png" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              
-              <div class="portfolio-links">
-                <a href="projects/sepsisprediction.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Project Details"><i class="bx bx-info-circle"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-da">
-          <center><h4>Bayesian vs Frequentist</h4></center>
-          <div class="portfolio-wrap">
-            <img src="assets/img/project/bayesian_vs_t_tests.png" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              
-              <div class="portfolio-links">
-                <a href="projects/bayesian_vs_t_tests.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Project Details"><i class="bx bx-info-circle"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-de">
-          <center><h4>Tableau</h4></center>
-          <div class="portfolio-wrap">
-            <img src="assets/img/project/tableau.png" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              
-              <div class="portfolio-links">
-                <a href="projects/tableau.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Project Details"><i class="bx bx-info-circle"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-da">
-          <center><h4>Telecom Customer Churn</h4></center>
-          <div class="portfolio-wrap">
-            <img src="assets/img/project/churn_prediction.png" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              
-              <div class="portfolio-links">
-                <a href="projects/telecom_customer_churn.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Project Details"><i class="bx bx-info-circle"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-da">
-          <center><h4>Car Price Prediction</h4></center>
-          <div class="portfolio-wrap">
-            <img src="assets/img/project/car_price_prediction.png" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              
-              <div class="portfolio-links">
-                <a href="projects/car_price_prediction.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Project Details"><i class="bx bx-info-circle"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-da">
-          <center><h4>Retail Sales Prediction</h4></center>
-          <div class="portfolio-wrap">
-            <img src="assets/img/project/retail_sales_ts.png" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              
-              <div class="portfolio-links">
-                <a href="projects/retail_sales_ts.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Project Details"><i class="bx bx-info-circle"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-        
-
-      </div>
-    </div>
-  </section>
-
-  <!-- End Project Section -->
-
-  <div id="contact-section"></div>
-  <script>
-    fetch('contact.html')
-    .then(response => response.text())
-    .then(html => {
-      document.getElementById('contact-section').innerHTML = html;
-    })
-    .catch(error => console.error('Error loading the Contact section:', error));
-  </script>
-
-
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/jquery/jquery.min.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
-  <script src="assets/vendor/counterup/counterup.min.js"></script>
-  <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/venobox/venobox.min.js"></script>
-  <script src="assets/vendor/typed.js/typed.min.js"></script>
-  <script type="text/javascript">
-    var typed = new Typed('.typing',{
-      strings: ["ML/AI Engineer", "Data Engineer", "Data Scientist"],
-      loop: true,
-      typeSpeed: 65,
-      backSpeed: 65
-    });
-  </script>
-
-  <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
-
-</body>
-
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+  </body>
 </html>
